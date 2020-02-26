@@ -22,12 +22,15 @@ public class Exercicio02 {
         funcionarios.add(new TecnicoManutencao("Oscar Ruggeri", 3000.0, 10.0, 500.0));
         funcionarios.add(new Gerente("Carlos Bilardo", 5000.0, 150.0));
 
-        System.out.println("O valor do orçamento anual do departamento 1986 da empresa é: "+calculaOrcamentoAnual(funcionarios));
+        System.out.println("O valor do orçamento anual do departamento 1986 da empresa é: " + calculaOrcamentoAnual(funcionarios));
 
     }
 
     private static double calculaOrcamentoAnual(List<Funcionario> funcionarios) {
-        // TODO: implemente o código deste método
-        return 0.0;
+        double x = 0;
+        for (Funcionario i : funcionarios) {
+            x = x + i.getSalario();
+        }
+        return x;
     }
 }

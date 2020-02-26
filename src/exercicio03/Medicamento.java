@@ -1,3 +1,10 @@
 package exercicio03;
 
-// TODO: implemente o código-fonte de Medicamento.java
+public class Medicamento extends Produto {
+
+    public Medicamento(int id, String nome, double preco, double desconto) {
+        super(id, nome, preco, desconto);
+    }
+
+
+}
