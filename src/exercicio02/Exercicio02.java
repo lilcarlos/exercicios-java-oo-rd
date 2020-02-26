@@ -29,7 +29,7 @@ public class Exercicio02 {
     private static double calculaOrcamentoAnual(List<Funcionario> funcionarios) {
         double x = 0;
         for (Funcionario i : funcionarios) {
-            x = x + i.getSalario();
+            x = x + i.retornarSalario();
         }
         return x;
     }

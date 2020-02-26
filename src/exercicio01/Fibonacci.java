@@ -30,7 +30,7 @@ public class Fibonacci {
      */
     public int[] getSequenciaFibonacciDe(int tamanho) {
 
-        List<Integer> fibo = new ArrayList<Integer>();
+        int[] fibo = new ArrayList<Integer>();
         fibo.add(1);
         fibo.add(2);
         int x = 2;
@@ -40,5 +40,4 @@ public class Fibonacci {
         }
         
 }
-
 }
